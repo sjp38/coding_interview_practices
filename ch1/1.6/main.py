@@ -70,4 +70,3 @@ if __name__ == "__main__":
             pr_question_answer(q, answer)
             exit(1)
         print "[PASS]"
-

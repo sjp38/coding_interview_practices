@@ -4,7 +4,7 @@
 Check whether all character in a string is unique
 """
 
-def no_dup_char(string):
+def is_unique(string):
     """
     Returns true if all character in string is unique,
     false otherwise
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     answers = [True, False, True, True, False, True, False]
 
     for i, q in enumerate(questions):
-        if no_dup_char(q) == answers[i]:
+        if is_unique(q) == answers[i]:
             print "PASS [%s] test" % q
             continue
         print "FAIL [%s] test" % q

@@ -1,10 +1,5 @@
 #!/usr/bin/env python
 
-class Foo:
-
-    def __init__(self):
-        pass
-
 class Node:
     nxt = None
     data = None

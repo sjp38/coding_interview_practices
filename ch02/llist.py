@@ -66,4 +66,11 @@ def lst_to_llst(lst):
 
 
 if __name__ == "__main__":
-    print Node(12)
+    questions = [[], [1], [1, 2, 3], [1, 2, 3, 4]]
+    for q in questions:
+        llst = lst_to_llst(q)
+        lst = llst_to_lst(llst)
+        if q != lst:
+            print "[FAIL] %s <-> %s" % (q, llst)
+            exit(1)
+        print "[PASS] %s" % q
